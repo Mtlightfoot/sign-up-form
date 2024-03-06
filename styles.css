@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Orbitron", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    background-image: url(./img/desert.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 400px;
+}
+
+.title {
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);;
+}
+
+.right-side {
+    height: 700px;
+    width: 600px;
+    background-color: #F9FAFB;
+}
