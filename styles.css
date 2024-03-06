@@ -17,28 +17,109 @@ body {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     background-image: url(./img/desert.jpg);
     background-position: center;
     background-size: cover;
+    min-height: 700px;
 }
 
 .left-side {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
-    width: 400px;
+    flex: 1 1 auto;
+    min-width: 400px;
+    min-height: 300px;
 }
 
 .title {
     width: 100%;
     padding: 20px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .right-side {
-    height: 700px;
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     background-color: #F9FAFB;
+    flex: 2 1 auto;
+    min-width: 600px;
+}
+
+.sign-up-box {
+    padding: 30px 0px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 15px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.sign-up-line {
+    margin-top: 10px;
+}
+
+.form-box {
+    color: #3B3B3B;
+    margin-top: 10px;
+}
+
+.box-1,
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.createAccBtn {
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    min-height: 60px;
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.createAccBtn:disabled {
+    pointer-events: none;
+}
+
+.createAccBtn:hover {
+    color: #fff;
+    background-color: #BC7646;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+    border: none;
+    transition: 0.4s;
+}
+
+.createAccBtn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+input {
+    padding: 5px;
+    text-align: center;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.log-in {
+    margin-top: 10px;
 }
